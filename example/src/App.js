@@ -1,10 +1,16 @@
 import React from 'react'
 
-import { ExampleComponent } from 'csv-excel-to-json-mapper'
+import { FileToJsonMaper } from 'csv-excel-to-json-mapper'
 import 'csv-excel-to-json-mapper/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  const keys = [
+    { value: "surname", label: "Surname", required: true },
+    { value: "otherNames", label: "Other Names", required: true },
+    { value: "email", label: "email" },
+    { value: "password", label: "Password" },
+  ]
+  return <FileToJsonMaper keys={keys} onComplete={(data) => console.log(data)} text="Create React Library Example 😄" />
 }
 
 export default App
