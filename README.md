@@ -1,6 +1,6 @@
 # csv-excel-to-json-mapper
 
-> this package helps map files from excel or csv to a desired json data structure 
+> this package helps map files from excel or csv to a desired json data structure
 
 [![NPM](https://img.shields.io/npm/v/csv-excel-to-json-mapper.svg)](https://www.npmjs.com/package/csv-excel-to-json-mapper) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
@@ -13,16 +13,23 @@ npm install --save csv-excel-to-json-mapper
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React from 'react'
 
-import MyComponent from 'csv-excel-to-json-mapper'
+import { FileToJsonMaper } from 'csv-excel-to-json-mapper'
 import 'csv-excel-to-json-mapper/dist/index.css'
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+const App = () => {
+  const keys = [
+    { value: "surname", label: "Surname", required: true },
+    { value: "otherNames", label: "Other Names", required: true },
+    { value: "email", label: "email" },
+    { value: "password", label: "Password" },
+  ]
+  return <FileToJsonMaper keys={keys} onComplete={(data) => console.log(data)} text="Create React Library Example 😄" />
 }
+
+export default App
+
 ```
 
 ## License
