@@ -25,7 +25,7 @@ const App = () => {
     { value: "email", label: "email" },
     { value: "password", label: "Password" },
   ]
-  return <FileToJsonMaper keys={keys} onComplete={(data) => console.log(data)} text="Create React Library Example 😄" />
+  return <FileToJsonMaper keys={keys} onComplete={(data) => console.log(data)} />
 }
 
 export default App

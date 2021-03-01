@@ -14,7 +14,10 @@ const FileReader = ({ onChange, visible }) => {
   return (
     <div className={styles.form_group + ' ' + styles.file_area}>
       <label htmlFor='file'>
-        File <span>Your file should be excel or csv</span>
+        File{' '}
+        <span className={styles.file_reader}>
+          Your file should be excel or csv
+        </span>
       </label>
       <input
         onChange={fileChange}

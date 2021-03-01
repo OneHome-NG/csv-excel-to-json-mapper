@@ -1,8 +1,8 @@
-@import 'https://fonts.googleapis.com/css?family=Open+Sans:600,700';
+/* @import 'https://fonts.googleapis.com/css?family=Open+Sans:600,700';
 
 * {
   font-family: 'Open Sans', sans-serif;
-}
+} */
 
  h3 {
   display: inline-block;
@@ -11,13 +11,6 @@
   font-size: 1.5em;
   color: #428bca;
   cursor: pointer;
-}
-
-
-span {
-  display: block;
-  text-align: center;
-  text-transform: uppercase !important;
 }
 
 div.table_footer {

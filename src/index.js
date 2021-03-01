@@ -36,7 +36,7 @@ export const FileToJsonMaper = ({ keys, onComplete }) => {
     newMapper = file.keys.map((map, index) => ({
       keys: map.value,
       required: map.required,
-      mapTo: data.headers[index].value
+      mapTo: data.headers[index] ? data.headers[index].value : ''
     }))
     setMapper([...newMapper])
     setFile({ ...file, mapsTo: data.headers, data: data.body })
